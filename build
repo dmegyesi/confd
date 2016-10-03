@@ -2,4 +2,4 @@
 
 echo "Building confd..."
 mkdir -p bin
-go build -o bin/confd .
+go build -ldflags "-s -w" -o bin/confd .
